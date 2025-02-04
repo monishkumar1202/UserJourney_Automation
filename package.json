@@ -1,0 +1,25 @@
+{
+  "name": "usergrow",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "mk",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "browserstack-cypress-cli": "^1.32.2",
+    "cypress-real-events": "^1.14.0"
+  },
+  "devDependencies": {
+    "@cypress-audit/lighthouse": "^1.4.2",
+    "cypress": "^14.0.1",
+    "cypress-audit": "^1.1.0",
+    "cypress-failed-log": "^2.10.0",
+    "cypress-iframe": "^1.0.1",
+    "cypress-mochawesome-reporter": "^3.8.2",
+    "cypress-performance": "^1.5.1",
+    "cypress-wait-until": "^3.0.2"
+  }
+}

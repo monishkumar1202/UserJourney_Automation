@@ -1,0 +1,32 @@
+{
+  "specName": "cypress\\e2e\\tests2\\Accounts\\Creation\\newAccount.cy.js",
+  "title": "Add Account ",
+  "suiteName": "Add new Account user ",
+  "testName": "Add new Account user  Add Account ",
+  "testError": "Timed out retrying after 40000ms: The command was expected to run against origin `https://app.devrev.ai` but the application is at origin `https://passwordless.devrev.ai`.\n\nThis commonly happens when you have either not navigated to the expected origin or have navigated away unexpectedly.\n\nUsing `cy.origin()` to wrap the commands run on `https://passwordless.devrev.ai` will likely fix this issue.\n\n`cy.origin('https://passwordless.devrev.ai', () => {`\n`  <commands targeting https://passwordless.devrev.ai go here>`\n`})`\n\nhttps://on.cypress.io/cy-visit-succeeded-but-commands-fail",
+  "testCommands": [
+    "visit https://app.devrev.ai/test-demo1",
+    "wait 20000",
+    "request ",
+    "request ",
+    "request ",
+    "request ",
+    "request ",
+    "request ",
+    "request ",
+    "request ",
+    "request ",
+    "request ",
+    "request ",
+    "request ",
+    "request ",
+    "page load --waiting for new page to load--",
+    "request ",
+    "request ",
+    "request ",
+    "request ",
+    "request ",
+    "new url https://passwordless.devrev.ai/login?state=hKFo2SBNWGlxeEVsZzVzSmpXV1F6ankzY2dEeE05dlVNUTBpRKFupWxvZ2luo3RpZNkgZDNZNFpfXzlJN2p3c0JEb2M1ZzVQaWZ0bk40dWRjbXajY2lk2SB1VG9Bbkd1RDI0TTVyOEJSTERObFo4cUFXY0cxb1pDbw&client=uToAnGuD24M5r8BRLDNlZ8qAWcG1oZCo&protocol=oauth2&prompt=select_account&scope=openid%20profile%20email&response_type=code&redirect_uri=https%3A%2F%2Fauth.devrev.ai%2Flogin%2Fcallback&response_mode=query",
+    "get input[inputmode=\"email\"]"
+  ]
+}

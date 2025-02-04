@@ -67,8 +67,8 @@ describe ('Create the New Issue ', ()=> {
        cy.get('[data-drid="work--timeline--comments--comments-container--comments-list-container--rich-text-editor--submit-button"]').click()
   
 
-       // Duplicate
-       cy.get('[class="select-dropdown__options"]').contains(issuesdetails.stagedulipcate)
+       // Duplicate Issues
+       cy.get('[class="select-dropdown__options"]').contains(issuesdetails.stageduplicate)
        cy.get('[data-drid="issue--links-widget-tabs-wrapper"]').contains(issuesdetails.Issues).click()
        cy.get('[data-drid="links-widget--add-links--link-type-dropdown-menu"]').click()
        cy.get('[class="select-dropdown__search-input"]').type(issuesdetails.linkissue).click()

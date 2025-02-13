@@ -1,0 +1,15 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1738839995284' stop='1738840103794'>
+    <name>Add Engagement in Opportunities</name>
+    <title>Add Engagement in Opportunities</title>
+    <test-cases>
+        <test-case start='1738839995284' status='passed' stop='1738840103794'>
+            <name>Add Engagement details via Opportunities </name>
+            <title>Add Engagement details via Opportunities </title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

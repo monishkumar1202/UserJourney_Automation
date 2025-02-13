@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "name": "usergrow",
   "version": "1.0.0",
   "main": "index.js",
@@ -22,4 +23,35 @@
     "cypress-performance": "^1.5.1",
     "cypress-wait-until": "^3.0.2"
   }
+=======
+  "name": "userjourney_automation",
+  "version": "1.0.0",
+  "description": "", 
+  "license": "ISC",
+  "author": "mk12",
+  "type": "commonjs",
+  "main": "index.js",
+  
+  "devDependencies": {
+    "@shelex/cypress-allure-plugin": "^2.40.2",
+    "allure-commandline": "^2.32.2",
+    "cypress": "^14.0.2",
+    "cypress-mochawesome-reporter": "^3.8.2",
+    "cypress-multi-reporters": "^2.0.5",
+    "mocha-allure-reporter": "^1.4.0"
+  },
+  "scripts": {
+
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test:allure"      :  "cypress run --env allure=true",
+    "test:allure:spec" :  "cypress run --env allure=true --headed --browser chrome --spec",
+    "allure:clear"     :  "rmdir /s /q allure-results && rmdir /s /q allure-report || true",
+    "allure:report"    :  "allure generate allure-results",
+    "allure:open"      :  "allure open allure-report",
+    "test:with-report" :  "npm run allure:clear && npm run test:allure:spec && npm run allure:report && npm run allure:open"
+   
+  }
+ 
+
+>>>>>>> 476bcf5 (My First Version on Datadriven Framework)
 }

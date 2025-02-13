@@ -1,0 +1,15 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1738840109821' stop='1738840238785'>
+    <name>Add comment on discussion section </name>
+    <title>Add comment on discussion section </title>
+    <test-cases>
+        <test-case start='1738840109822' status='passed' stop='1738840238785'>
+            <name>Clone Opportunity sucessfully</name>
+            <title>Clone Opportunity sucessfully</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

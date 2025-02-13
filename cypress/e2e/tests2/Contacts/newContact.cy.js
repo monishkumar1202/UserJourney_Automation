@@ -1,7 +1,11 @@
 describe('Creating the Ticket via Contact',()=> {
 
     const contactdetails = {
+<<<<<<< HEAD
         titlename : 'UserY',
+=======
+        titlename : 'UserXY',
+>>>>>>> 476bcf5 (My First Version on Datadriven Framework)
         members : 'monishkumarsk12',
         email  : 'testautomation@gmail.com',
         phoneno : '9998887750',

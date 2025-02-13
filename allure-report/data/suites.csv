@@ -1,0 +1,6 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","102573","delete Opportunities","","Thu Feb 06 17:29:45 IST 2025","passed","Thu Feb 06 17:31:28 IST 2025",""," Opportunity delete the User "," Opportunity delete the User ","delete Opportunities"
+"","118877","Opportunities flow in grow module","","Thu Feb 06 17:27:38 IST 2025","passed","Thu Feb 06 17:29:36 IST 2025","","Add the new Opportunities","Add the new Opportunities","Opportunities flow in grow module"
+"","130322","Clone Opportunity sucessfully","","Thu Feb 06 17:25:16 IST 2025","passed","Thu Feb 06 17:27:27 IST 2025","","Add comment on discussion section ","Add comment on discussion section ","Clone Opportunity sucessfully"
+"","104072","Opportunity Creation of Ticket","","Thu Feb 06 17:31:34 IST 2025","passed","Thu Feb 06 17:33:18 IST 2025","","Create Ticket via Opportunity","Create Ticket via Opportunity","Opportunity Creation of Ticket"
+"","88517","Add Engagement details via Opportunities ","","Thu Feb 06 17:23:41 IST 2025","passed","Thu Feb 06 17:25:10 IST 2025","","Add Engagement in Opportunities","Add Engagement in Opportunities","Add Engagement details via Opportunities "

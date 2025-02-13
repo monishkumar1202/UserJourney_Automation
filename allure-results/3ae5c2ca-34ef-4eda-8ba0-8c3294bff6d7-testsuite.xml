@@ -1,0 +1,15 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1738843058107' stop='1738843176985'>
+    <name>Add the new Opportunities</name>
+    <title>Add the new Opportunities</title>
+    <test-cases>
+        <test-case start='1738843058108' status='passed' stop='1738843176985'>
+            <name>Opportunities flow in grow module</name>
+            <title>Opportunities flow in grow module</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

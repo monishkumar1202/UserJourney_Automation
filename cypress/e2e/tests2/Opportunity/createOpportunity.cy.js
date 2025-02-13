@@ -7,7 +7,11 @@ describe ('Add the new Opportunities', ()=>{
        contact  : 'UserF',
        addaccount : 'Test_demo5',
        tags     : 'Getting Started',
+<<<<<<< HEAD
        titlename: 'Demotest7',
+=======
+       titlename: 'Demotest09',
+>>>>>>> 476bcf5 (My First Version on Datadriven Framework)
        des : 'testing automation',
        addowner :  'monishkumarsk12',
        url      : 'www.testdemo.com'

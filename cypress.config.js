@@ -1,4 +1,5 @@
 const { defineConfig } = require("cypress");
+<<<<<<< HEAD
 const browserstackTestObservabilityPlugin = require('browserstack-cypress-cli/bin/testObservability/plugin');
 
 module.exports = defineConfig({
@@ -31,3 +32,19 @@ module.exports = defineConfig({
   }
   
 })
+=======
+const allureWriter = require('@shelex/cypress-allure-plugin/writer');
+
+module.exports = defineConfig({
+  defaultCommandTimeout: 20000, 
+  e2e: {
+    experimentalSessionAndOrigin: false, 
+    testIsolation: false,
+
+    setupNodeEvents(on, config) {     
+      allureWriter(on, config);
+      return config; 
+    },
+  },
+});
+>>>>>>> 476bcf5 (My First Version on Datadriven Framework)

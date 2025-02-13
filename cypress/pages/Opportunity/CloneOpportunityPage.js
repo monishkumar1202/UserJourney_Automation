@@ -2,7 +2,7 @@ import ClonesOpportunity from "../../locators/Opportunity/ClonesOpportunity"
 
 cloneopportuntiylocator = new ClonesOpportunity ();
 
-class ClonesOpportunity{
+class CloneOpp {
 
     exitsopportunity = (name) => {
         return ({ args : { name, selector: cloneopportuntiylocator.pinnedLeftColsContainer } },
@@ -41,4 +41,4 @@ class ClonesOpportunity{
 
 }
 
-module.exports = new ClonesOpportunity();
+module.exports = new CloneOpp();

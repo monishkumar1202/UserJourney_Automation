@@ -13,8 +13,14 @@ export default class addengagement {
     get externalUrlField() { return '[data-drid="create-engagement--create-sidebar--shared-template-field-external_url--content"]'; }
     get createSubmitButton() { return '[data-drid="create-engagement--create-submit"]'; }
     get closeButton() { return '[data-drid="engagement-sidebar--details-sidebar--close-button"]>span'; }
+    
+    get opportunityTreeGrid() { return '[role="treegrid"]'; }
+    get discussionsTab() { return '[data-drid="work--timeline--tabs--nav-item--discussions--active"]'; }
+    get messageInput() { return '[data-placeholder="Send a message"]'; }
+    get submitMessageButton() { return '[data-drid="work--timeline--comments--comments-container--comments-list-container--rich-text-editor--submit-button"]'; }
+    get messageContent() { return '[data-drid="message-layout--content"]'; }
+    get closeSidebarButton() { return '[data-drid="work--details-sidebar--close-button"]'; }
 
 
 
-
-}
+   }

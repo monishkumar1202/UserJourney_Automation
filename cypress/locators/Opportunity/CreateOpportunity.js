@@ -17,6 +17,14 @@ export default class CreateOpportunity {
     get tagsOptions() { return cy.get('[class="select-dropdown__options"]'); }
     get createSubmitButton() { return cy.get('[data-drid="works--create-work-submit"]'); }
 
+    get opportunityTreeGrid() { return '[role="treegrid"]'; }
+    get discussionsTab() { return '[data-drid="work--timeline--tabs--nav-item--discussions--active"]'; }
+    get ValidateTabs() { return '[class="flex bg-area rounded-lg text-color-secondary p-1 text-small w-fit"]'; }
+    get messageInput() { return '[data-placeholder="Send a message"]'; }
+    get submitMessageButton() { return '[data-drid="work--timeline--comments--comments-container--comments-list-container--rich-text-editor--submit-button"]'; }
+    get messageContent() { return '[data-drid="message-layout--content"]'; }
+    get closeSidebarButton() { return '[data-drid="work--details-sidebar--close-button"]'; }
+
 
     
      

@@ -1,4 +1,3 @@
-import CreateOpportunity from '../../locators/Opportunity/CreateOpportunity';
 import  CreateNewOpportunity  from '../../locators/Opportunity/CreateOpportunity';
 
 createopportunitylocator = new CreateNewOpportunity();
@@ -95,8 +94,72 @@ class CreateNewOpportunity {
         )
     }
 
+    exitsoppotunity = (name) => {
+        return ({ args: { name, selector: deleteopportunitylocator.treegrid} },
+          ({ name, selector }) => { 
+            cy.get(selector).contains(name).click(); 
+          }
+        );
+    }
+
+    VerifyTab = () => {
+        return ({ args: {  selector: createopportunitylocator.ValidateTabs } },
+            ({ selector }).within(() => {
+                cy.contains('Discussions').should('be.visible');
+                cy.contains('Events').should('be.visible');
+                cy.contains('Engagements').should('be.visible')
+            })        
+        );
+    }
+
+    VerifyDiscussionTab = () => {
+        return ({ args: { selector: createopportunitylocator.discussionsTab } },
+            ({ selector }) => {
+                cy.get(selector).click();
+            }
+        )
+    }
+
+    }
+    typeDiscussion =(message) => {
+        return ({ args : { message, selector : createopportunitylocator.messageInput }},
+            ({message, selector }) => {
+                cy.get(selector).type(message);
+         }
+        )
+    }
+
+    ClickSumbit = () => {
+         return ({ args: { selector: createopportunitylocator.createSubmitButton } },
+             ({ selector }) => {
+                  cy.get(selector).click();
+          }
+        )
+    }
+    
+    
+
+    ValidateMessage = () => {
+        return ({ args : {selector : createopportunitylocator.messageContent}},
+            ({ selector }) => {
+                cy.get(selector).should('be.visible')
+            }
+        )
+     }
+
+     CloseButton = () =>  {
+        return ({ args : {selector : createopportunitylocator.closeSidebarButton}},
+            ({ selector }) => {
+              cy.get(selector).click()
+            }
+        )
+     }
 
 
-}
+
+
+     
+
+
 
 module.exports = new CreateOpportunity();

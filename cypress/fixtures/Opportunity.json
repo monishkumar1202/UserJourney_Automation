@@ -27,7 +27,9 @@
         "tags"         : "Getting Started",
         "des"          : "testing automation",
         "addowner"     : "monishkumarsk12",
-        "url"          : "www.testdemo.com"    
+        "url"          : "www.testdemo.com" , 
+        "exitsoppotunity" : "Demotest09" ,
+        "sendMessage"  :  "This is a test message for automation."
         }
     },
     {

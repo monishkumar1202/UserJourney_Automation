@@ -46,6 +46,12 @@ describe('Add new Account user ', ()=>{
 
     cy.get('[role="treegrid"]', {timeout:20000}).should('contain', Accountdetails.titlename)
 
+    // Discussion Comment section
+    cy.get('[data-drid="account-sidebar--timeline-widget--tabs--nav-item--discussions--active"]').contains('Discussions').click()
+    cy.get('[data-placeholder="Send a message"]').type('This is a test message for discussion section.')
+    cy.get('[data-drid="account-sidebar--timeline-widget--comments--comments-container--comments-list-container--rich-text-editor--slot-submit"]').click()
+    cy.get('[data-drid="account-sidebar--timeline-widget--comments--comments-container--comments-list-container--comments-list--item"]').should('be.visible')
+    cy.get('[data-drid="account-sidebar--details-sidebar--close-button"]').click()
     })
 
     })

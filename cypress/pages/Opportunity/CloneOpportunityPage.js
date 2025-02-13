@@ -37,6 +37,17 @@ class CloneOpp {
         return cy.get(cloneopportuntiylocator.closeButton).click();
     }
 
+    VerifyTab = (name, name1, name2) => {
+        return ({ args: { name, name1, name2, selector: cloneOpportunityLocator.closeButton } },
+            ({ name, name1, name2, selector }) => {
+                cy.get(selector).contains(name);
+                cy.get(selector).contains(name1);
+                cy.get(selector).contains(name2);
+            }
+        );
+    }
+
+    
 
 
 }

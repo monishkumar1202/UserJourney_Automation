@@ -7,11 +7,6 @@ describe ('Add the new Opportunities', ()=>{
        contact  : 'UserF',
        addaccount : 'Test_demo5',
        tags     : 'Getting Started',
-<<<<<<< HEAD
-       titlename: 'Demotest7',
-=======
-       titlename: 'Demotest09',
->>>>>>> 476bcf5 (My First Version on Datadriven Framework)
        des : 'testing automation',
        addowner :  'monishkumarsk12',
        url      : 'www.testdemo.com'
@@ -68,6 +63,15 @@ describe ('Add the new Opportunities', ()=>{
 
     cy.get('[data-drid="work--info-header--title"]',{timeout: 20000})
     .contains(opportunityDetails.titlename).should('be.visible')
+
+    cy.get('[class="flex bg-area rounded-lg text-color-secondary p-1 text-small w-fit"]').each(($div) => {
+       cy.wrap($div).within(() => {
+        cy.contains('Discussions').should('be.visible');
+        cy.contains('Events').should('be.visible');
+        cy.contains('Engagements').should('be.visible')
+         })
+    })
+    
     cy.get('[data-drid="work--timeline--tabs--nav-item--discussions--active"]').contains('Discussions').click()
     cy.get('[data-placeholder="Send a message"]').type('This is a test message for automation.')
     cy.get('[data-drid="work--timeline--comments--comments-container--comments-list-container--rich-text-editor--submit-button"]').click()

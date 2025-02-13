@@ -1,0 +1,54 @@
+{
+    "ValidateVista": {
+        "oldAccount": "Test_demo8",
+        "titlename": "test g"
+    },
+    "deleteAccount": {
+        "oldaccount": "deleteuser"
+    },
+    "mergeAccount": {
+        "oldaccount": "MergeA",
+        "mergeaccount": "MergeB",
+        "mergealertq": "Do you wish to merge these accounts?",
+        "mergealertA": " and associated discussions will be deleted.",
+        "mergetoastermessage": "Accounts successfully merged"
+    },
+    "contactAccount": {      
+        "oldaccount": "Test_demo08",
+        "titlename": "UserF",
+        "phoneno": "9876556789",
+        "email": "testingautomation03@gmail.com",
+        "tags": "mk"
+    },
+    "engagementAccount": {       
+        "oldaccount": "demoUser",
+        "engagementtilte": "New Engagment 03",
+        "header": "Email",
+        "members": "monishkumarsk12",
+        "url": "www.cypressdemo.com"
+    },
+
+    "ticketAccount": {       
+        "oldaccount": "MergeA",
+        "ticketname": "Ticket no : 09",
+        "parts": "testingUserjourney",
+        "severity": "High",
+        "tags": "Getting Started"
+    },
+      
+    "NewAccount": {       
+        "titlename": "Test_demo13",
+        "websites": "www.testingdevrev002.in", 
+        "tags": "Getting Started"
+    },
+
+    "OpportunityAccount": {       
+        "oldaccount": "Test_demo11",
+        "titlename": "Demotest10",
+        "addowner": "monishkumarsk12",
+        "URL": "www.testingopp.co.in",
+        "tags": "Getting Started"
+    }
+     
+   
+}

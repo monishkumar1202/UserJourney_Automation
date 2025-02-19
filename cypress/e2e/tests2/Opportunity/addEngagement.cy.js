@@ -16,15 +16,6 @@ describe('Add Engagement in Opportunities', ()=>{
     it('Add Engagement details via Opportunities ',()=> {
 
     // Login the Devrev account
-<<<<<<< HEAD
-    cy.visit('https://app.devrev.ai/test-demo1')
-    cy.wait(10000)
-    cy.get('input[inputmode="email"]').type('monishkumarsk12@gmail.com')
-    cy.get('[class="auth0-lock-submit"]').should('be.visible').click()
-    cy.wait(50000)
-      
-
-=======
       cy.visit('https://app.devrev.ai/test-demo1')
       cy.wait(10000)
       cy.origin('https://passwordless.devrev.ai', () => {
@@ -33,7 +24,6 @@ describe('Add Engagement in Opportunities', ()=>{
         cy.wait(50000)
     })
     
->>>>>>> 476bcf5 (My First Version on Datadriven Framework)
     //  Add New Engagement details
 
       cy.get('[title="Opportunities"]').should('be.visible').click()

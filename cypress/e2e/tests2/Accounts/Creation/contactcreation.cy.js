@@ -42,7 +42,7 @@ describe('Account page via create the Contact details', ()=>{
               cy.wrap($contacts).click();
             } else {
               cy.get('[data-drid="revo-widget-header--tab-strip--next-tab"]').click();
-              cy.get('[class="szh-menu szh-menu--state-open szh-menu--dir-top"]').contains('Contacts').click();
+              cy.get('[class="szh-menu szh-menu--state-open szh-menu--dir-bottom"]>div>li').contains('Contacts').click();
             }
           })
 

@@ -14,17 +14,6 @@
 // ***********************************************************
 
 // Import commands.js using ES2015 syntax:
-<<<<<<< HEAD
-
-import './commands'
-import 'cypress-wait-until';
-import 'cypress-mochawesome-reporter/register';
-
-require('cypress-failed-log')
-
-import "cypress-failed-log"
-=======
 import './commands'
 
 import '@shelex/cypress-allure-plugin'
->>>>>>> 476bcf5 (My First Version on Datadriven Framework)

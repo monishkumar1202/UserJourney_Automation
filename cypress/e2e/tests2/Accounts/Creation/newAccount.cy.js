@@ -40,11 +40,9 @@ describe('Add new Account user ', ()=>{
         cy.get('[data-drid="create-account--create-submit"]').contains('Create').click()
         cy.get('[data-drid="account-sidebar--details-sidebar--title"]')
         .contains(Accountdetails.titlename).should('be.visible')
-        cy.get('[data-drid="account-sidebar--details-sidebar--close-button"]').click()
+        
 
     // verify the Account PAGE Dashboard
-
-    cy.get('[role="treegrid"]', {timeout:20000}).should('contain', Accountdetails.titlename)
 
     // Discussion Comment section
     cy.get('[data-drid="account-sidebar--timeline-widget--tabs--nav-item--discussions--active"]').contains('Discussions').click()
@@ -52,7 +50,12 @@ describe('Add new Account user ', ()=>{
     cy.get('[data-drid="account-sidebar--timeline-widget--comments--comments-container--comments-list-container--rich-text-editor--slot-submit"]').click()
     cy.get('[data-drid="account-sidebar--timeline-widget--comments--comments-container--comments-list-container--comments-list--item"]').should('be.visible')
     cy.get('[data-drid="account-sidebar--details-sidebar--close-button"]').click()
-    })
+   
+    cy.get('[role="treegrid"]', {timeout:20000}).should('contain', Accountdetails.titlename)
+
+   
+
+})
 
     })
 

@@ -1,4 +1,4 @@
-import TicketOpportunityPage from "../../locators/Opportunity/TicketOpportunity"
+import TicketOpportunityPage from "../../locators/Opportunity/TicketOpportunitylocator"
 
 const ticketopportunitylocator =new TicketOpportunityPage ();
 

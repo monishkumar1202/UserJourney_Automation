@@ -1,4 +1,4 @@
-import validateDashboard from "../../../locators/Opportunity/ValidateDashboard";
+import validateDashboard from "../../../locators/Opportunity/ValidateDashboardlocator";
 
 
 describe('Validate Opportunity Tests', () => {

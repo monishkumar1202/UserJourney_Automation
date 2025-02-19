@@ -28,32 +28,32 @@ describe('Create Opportunity via Account ', ()=>{
     // Verify the Opportunity created Sucessfully   
     
         cy.get('[title="Accounts"]',{timeout : 30000}).should('be.visible').click()
-        cy.get('[col-id="displayName"]').contains(Accountdetails.oldaccount).click()
-        cy.get('[data-drid="account-sidebar--collapsed"]',{timeout: 20000}).click()       
-              cy.get('[data-drid="revo-widget-header--tab-strip--next-tab"]').click();
-              cy.get('[role="menu"]').contains('Opportunities').click();
-        cy.get('[data-drid="revo--create-opportunity"]').click() 
-        cy.get('[data-drid="works--create-work-sidebar--shared-template-field-title--parent-input"]',{timeout:20000}).type(Accountdetails.titlename)
-        cy.get('[data-drid="works--create-work-sidebar--shared-template-field-body--editor"]').type('end to end testing')
-        cy.get('[data-drid="works--create-work-sidebar--shared-template-field-owned_by"]').click()
-        cy.get('[class="select-dropdown__options"]>div').contains(Accountdetails.addowner).click()
-        cy.get('[data-drid="works--create-work-sidebar--shared-template-field-amount--content"]').type('10000')
-        cy.get('[data-drid="works--create-work-sidebar--shared-template-field-annual_recurring_revenue--content"]').type('5000')
-        cy.get('[data-drid="works--create-work-sidebar--shared-template-field-tags-select"]').click()
-        cy.get('[class="select-dropdown__options"]').contains(Accountdetails.tags).click()
-        cy.get('body').click(0, 0)
-        cy.get('[data-drid="works--create-work-submit"]').scrollIntoView().click()
+            cy.get('[col-id="displayName"]').contains(Accountdetails.oldaccount).click()
+            cy.get('[data-drid="account-sidebar--collapsed"]',{timeout: 20000}).click()       
+            cy.get('[data-drid="revo-widget-header--tab-strip--next-tab"]').click();
+            cy.get('[role="menu"]').contains('Opportunities').click();
+                cy.get('[data-drid="revo--create-opportunity"]').click() 
+                cy.get('[data-drid="works--create-work-sidebar--shared-template-field-title--parent-input"]',{timeout:20000}).type(Accountdetails.titlename)
+                cy.get('[data-drid="works--create-work-sidebar--shared-template-field-body--editor"]').type('end to end testing')
+                cy.get('[data-drid="works--create-work-sidebar--shared-template-field-owned_by"]').click()
+                cy.get('[class="select-dropdown__options"]>div').contains(Accountdetails.addowner).click()
+                cy.get('[data-drid="works--create-work-sidebar--shared-template-field-amount--content"]').type('10000')
+                cy.get('[data-drid="works--create-work-sidebar--shared-template-field-annual_recurring_revenue--content"]').type('5000')
+                cy.get('[data-drid="works--create-work-sidebar--shared-template-field-tags-select"]').click()
+                cy.get('[class="select-dropdown__options"]').contains(Accountdetails.tags).click()
+                cy.get('body').click(0, 0)
+                cy.get('[data-drid="works--create-work-submit"]').scrollIntoView().click()
 
-    // verify the Opportunity details created sucesfully     
+            // verify the Opportunity details created sucesfully     
 
-        cy.get('[data-drid="work--info-header--title"]').contains(Accountdetails.titlename)
-        cy.get('[data-drid="work--details-sidebar--close-button"]').click()
+                cy.get('[data-drid="work--info-header--title"]').contains(Accountdetails.titlename)
+                cy.get('[data-drid="work--details-sidebar--close-button"]').click()
 
-    // verifying the create opportunity displaying the Account details
+            // verifying the create opportunity displaying the Account details
 
-         cy.get('[data-drid="revo-widget-header--opportunity"]').click()
-         cy.get('[data-drid="--title"]').contains(Accountdetails.titlename)
-         cy.get('[data-drid="account-sidebar--details-sidebar--close-button"]').click()
+                cy.get('[data-drid="revo-widget-header--opportunity"]').click()
+                cy.get('[data-drid="--title"]').contains(Accountdetails.titlename)
+                cy.get('[data-drid="account-sidebar--details-sidebar--close-button"]').click()
 
 
         })

@@ -5,7 +5,8 @@
         "SearchOpp" : "Opportunities",
         "SearchAccount" : "Accounts",
         "SearchContact" : "Contacts",
-        "SearchIssues" :  "Issues"
+        "SearchIssues" :  "Issues",
+        "SearchTicket" :   "Ticket"
         
     
 }

@@ -1,10 +1,15 @@
 
 {
+    "prodUrl" : "https://app.devrev.ai/testingdevrev",
     "appUrl": "https://app.devrev.ai/test-demo1",
+    
     "loginUrl": "https://passwordless.devrev.ai",
 
-     "validUser": {
+     "User01": {
      "email":  "monishkumarsk12@gmail.com"
+  },
+      "User02"  : {
+      "email":  "qkmonishq13545@gmail.com"
   }
 
 }

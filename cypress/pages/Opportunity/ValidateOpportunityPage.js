@@ -1,4 +1,4 @@
-import ValidateOpportunity from "../../locators/Opportunity/ValidateDashboard"
+import ValidateOpportunity from "../../locators/Opportunity/ValidateDashboardlocator"
 
 const dashboardlocator = new ValidateOpportunity();
 

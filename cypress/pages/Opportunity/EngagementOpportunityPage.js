@@ -1,4 +1,4 @@
-import EngagementOpportunity from '../../locators/Opportunity/addEngagement';
+import EngagementOpportunity from '../../locators/Opportunity/addEngagementlocator';
 
  
 const engagementLocators = new EngagementOpportunity();   
@@ -76,6 +76,14 @@ class AddEngagement {
 
     closeEngagementSidebar = () => {
         return ({ args: { selector: engagementLocators.closeButton } },
+            ({ selector }) => {
+                cy.get(selector).click();
+            }
+        )
+    }
+
+    xyzeButton = () => {
+        return ({ args: { selector: engagementLocators.createSubmitButton } },
             ({ selector }) => {
                 cy.get(selector).click();
             }

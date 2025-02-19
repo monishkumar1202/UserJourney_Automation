@@ -1,3 +1,5 @@
+
+
 describe('Accounts page via create the Ticket details', ()=>{
 
    const Accountdetails = {
@@ -32,9 +34,9 @@ describe('Accounts page via create the Ticket details', ()=>{
 
        cy.get('[title="Accounts"]',{timeout : 30000}).should('be.visible').click()
        cy.get('[col-id="displayName"]').contains(Accountdetails.oldaccount).click()
-       cy.get('[data-drid="account-sidebar--collapsed"]',{timeout: 20000}).click()
-       cy.get('[data-drid="revo-widget-header--ticket"]').contains('Tickets').click()
+       cy.get('[data-drid="revo-widget-header--ticket"]').should('have.text', 'Tickets');
        cy.get('[data-drid="revo--create-ticket"]').click()
+       
 
    // Fill the Ticket details
 

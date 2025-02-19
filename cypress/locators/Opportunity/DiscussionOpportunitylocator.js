@@ -28,13 +28,5 @@ export default class DiscussionOpportunity {
         return cy.get('[data-drid="work--details-sidebar--close-button"]');
       }
 
-      verifyFlexBgArea() {
-        this.flexBgArea.each(($div) => {
-          cy.wrap($div).within(() => {
-            cy.contains('Discussions').should('be.visible');
-            cy.contains('Events').should('be.visible');
-            cy.contains('Engagements').should('be.visible');
-          });
-        });
-      }
+      
 }

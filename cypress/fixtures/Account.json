@@ -18,7 +18,9 @@
         "titlename": "UserF",
         "phoneno": "9876556789",
         "email": "testingautomation03@gmail.com",
-        "tags": "mk"
+        "tags": "mk",
+        "des"  : "Add Contact for testing",
+        "countrycode"  : "India"
     },
     "engagementAccount": {       
         "oldaccount": "demoUser",
@@ -33,21 +35,29 @@
         "ticketname": "Ticket no : 09",
         "parts": "testingUserjourney",
         "severity": "High",
-        "tags": "Getting Started"
+        "tags": "Getting Started",
+        "des"  : "Sanity Testing"
     },
       
     "NewAccount": {       
         "titlename": "Test_demo13",
         "websites": "www.testingdevrev002.in", 
-        "tags": "Getting Started"
+        "tags": "Getting Started",
+        "des"  : "Testing Account for Automation",
+        "message" : "This message for automation testing"
+        
     },
 
-    "OpportunityAccount": {       
+    "OpportunityAccount": {              
         "oldaccount": "Test_demo11",
         "titlename": "Demotest10",
         "addowner": "monishkumarsk12",
         "URL": "www.testingopp.co.in",
-        "tags": "Getting Started"
+        "tags": "Getting Started",
+        "amount" : "5000",
+        "des"  : "end to end testing",
+        "arr"  : "2000"
+
     }
      
    

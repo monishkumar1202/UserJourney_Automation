@@ -3,18 +3,11 @@ describe('Create Ticket via Opportunity', ()=>{
     const oppdetails = {
         
         selectpart : 'testingUserjourney',
-<<<<<<< HEAD
-        tickettitle:  'tck@003',
-        existOpportunity : 'usertest02',
-        severity     : 'High',
-        contactcustomer : 'Test_demo5'
-=======
         tickettitle:  'tickets008',
         existOpportunity : 'usertest02',
         Groups     : 'Admins',
         tags       :  'mk',
         accountcustomer : 'Test_demo5'
->>>>>>> 476bcf5 (My First Version on Datadriven Framework)
 
     }
  
@@ -22,7 +15,6 @@ describe('Create Ticket via Opportunity', ()=>{
        
       // Login the Devrev account
       cy.visit('https://app.devrev.ai/test-demo1')
-<<<<<<< HEAD
       cy.wait(10000)
       cy.get('input[inputmode="email"]').type('monishkumarsk12@gmail.com')
       cy.get('[class="auth0-lock-submit"]').should('be.visible').click()
@@ -61,13 +53,7 @@ describe('Create Ticket via Opportunity', ()=>{
 
       cy.get('[data-drid="links-widget--link-item--title"]',{timeout: 20000}).contains(oppdetails.tickettitle)
       cy.get('[data-drid="work--details-sidebar--close-button"]').click()
-=======
       
-      cy.origin('https://passwordless.devrev.ai', () => {
-        cy.get('input[inputmode="email"]').type('monishkumarsk12@gmail.com')
-        cy.get('[class="auth0-lock-submit"]').should('be.visible').click()
-        cy.wait(50000)
-    }) 
 
     // Create ticket and enter details via opportunity 
 
@@ -101,7 +87,7 @@ describe('Create Ticket via Opportunity', ()=>{
 
         cy.get('[data-drid="links-widget--link-item--title"]',{timeout: 20000}).contains(oppdetails.tickettitle)
         cy.get('[data-drid="work--details-sidebar--close-button"]').click()
->>>>>>> 476bcf5 (My First Version on Datadriven Framework)
+
 
     })
 

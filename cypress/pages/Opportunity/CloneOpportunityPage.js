@@ -1,4 +1,4 @@
-import ClonesOpportunity from "../../locators/Opportunity/ClonesOpportunity"
+import ClonesOpportunity from "../../locators/Opportunity/ClonesOpportunitylocator"
 
 cloneopportuntiylocator = new ClonesOpportunity ();
 
@@ -47,7 +47,7 @@ class CloneOpp {
         );
     }
 
-    
+
 
 
 }

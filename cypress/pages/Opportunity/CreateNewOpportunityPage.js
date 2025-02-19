@@ -1,4 +1,4 @@
-import  CreateNewOpportunity  from '../../locators/Opportunity/CreateOpportunity';
+import  CreateNewOpportunity  from '../../locators/Opportunity/CreateOpportunitylocator';
 
 createopportunitylocator = new CreateNewOpportunity();
 
@@ -162,4 +162,4 @@ class CreateNewOpportunity {
 
 
 
-module.exports = new CreateOpportunity();
+module.exports = new CreateNewOpportunity();

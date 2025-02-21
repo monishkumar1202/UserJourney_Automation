@@ -19,6 +19,7 @@ class SearchPage {
      
         searchItem(item) {
             
+          console.log(item);
           this.smallScreenInput.then(($smallScreenInput) => {
              if ($smallScreenInput.is(':visible')) {
                   cy.wrap($smallScreenInput).should('be.visible').type(item);
@@ -35,6 +36,7 @@ class SearchPage {
 
        }
      }
-    
 
-export default new SearchPage();
+     export default new SearchPage();
+     
+    

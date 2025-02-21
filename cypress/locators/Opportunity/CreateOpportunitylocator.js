@@ -5,6 +5,11 @@ export default class CreateOpportunity {
         return cy.get('button[data-drid="new-work-button"]'); 
     }
 
+    // Input field for input
+    get titleInput() { 
+        return cy.get('input[name="title"]');
+    }
+
     // Input field for description
     get descriptionInput() { 
         return cy.get('p[data-placeholder="Add description"]'); 

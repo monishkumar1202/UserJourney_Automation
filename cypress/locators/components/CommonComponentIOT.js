@@ -1,32 +1,24 @@
 export default class NewIOT {
 
      get newWorkButtonIOT() {
-        return cy.get('[data-drid="works--new-work-button"]')
+        return cy.get('[data-drid="works--new-work-button"]', {timeout:40000})
      }
 
      get selectNewWorkIOT() {
-        return cy.get('[data-drid="works--create-work-sidebar--shared-template-field-type-select"]')
+        return cy.get('[data-drid="works--create-work-sidebar--shared-template-field-type-select"]', {timeout:30000} )
      }
 
      get selectOptionIOT() {
-        return cy.get('[class="select-dropdown__options"]')         
-     }
-
-     get typeTitleIOT()  {
-        return cy.get('[data-drid="works--create-work-sidebar--shared-template-field-title--parent-input"]')
-     }
-
-     get resetButton() {
-        return cy.get('[data-drid="works--create-work-reset"]')
+        return cy.get('[class="select-dropdown__options"]', {timeout:20000}  )         
      }
 
      get clickAddTitleIOT()  {
         return cy.get('[data-drid="works--create-work-sidebar--shared-template-field-title--content"]')
      }
 
-     get typeTitleIOT() {
-        return cy.get('input[name="title"]')
-     }
+     get typeTitleIOT()  {
+      return cy.get('[data-drid="works--create-work-sidebar--shared-template-field-title--parent-input"]')
+   }
 
      get typeDescriptionIOT() {
         return cy.get('[data-drid="works--create-work-sidebar--shared-template-field-body--editor"]')
@@ -41,7 +33,7 @@ export default class NewIOT {
      }
 
      get letterItalic() {
-        return cy.get('[works--create-work-sidebar--shared-template-field-body--tool-bar--italic]')
+        return cy.get('[data-drid="works--create-work-sidebar--shared-template-field-body--tool-bar--italic"]')
      }
 
      get letterStrike () {
@@ -123,6 +115,10 @@ export default class NewIOT {
      get closeButton() {
         return cy.get('[data-drid="works--create-work-sidebar--close-button"]')
      }
+
+     get resetButton() {
+      return cy.get('[data-drid="works--create-work-reset"]')
+   }
 
 }
 

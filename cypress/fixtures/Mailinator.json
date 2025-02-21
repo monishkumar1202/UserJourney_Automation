@@ -1,0 +1,6 @@
+{
+    
+    "emailListUrl": "https://mailinator.com/api/v2/domains/private/inboxes/devrevtesting?limit=1&sort=descending&token=4df54826df654f05ad89b057ef8573db",
+    "messageUrl": "https://mailinator.com/api/v2/domains/private/messages"
+
+  }

@@ -1,16 +1,21 @@
 import NewWorkIOTPage from "../../locators/components/CommonComponentIOT"
 
-const newworkpage =  NewWorkIOTPage;
+const newworkpage = new NewWorkIOTPage();
 
 class NewWorkPage {
 
     clickNewWorkButton() {
-       newworkpage.newWorkButtonIOT.click();
+       cy.wait(10000);
+       newworkpage.newWorkButtonIOT.should('exist').click();
     }
 
     selectNewWork(optionValue) {
         newworkpage.selectNewWorkIOT.click();
-        newworkpage.selectOptionIOT.contains(optionValue).click();
+        newworkpage.selectOptionIOT.contains(optionValue).click();       
+    }
+
+    addTitle() {
+        newworkpage.typeTitleIOT.click();
     }
 
     fillTitle(title) {
@@ -18,16 +23,12 @@ class NewWorkPage {
         newworkpage.typeTitleIOT.type(title);
     }
 
-    VerifyResetButton() {
-        newworkpage.resetButton.click();
-    }
-
-    AddTitle() {
-       newworkpage.typeTitleIOT.click(); 
-    }
-
     FillDescription(description) {
        newworkpage.typeDescriptionIOT.type(description);
+    }
+
+    VerifyResetButton() {
+        newworkpage.resetButton.click();
     }
 
     verifyToolBar() {
@@ -141,7 +142,7 @@ class NewWorkPage {
 
 }
 
-module.exports = new NewWorkPage();
+export default new NewWorkPage;
  
 
 

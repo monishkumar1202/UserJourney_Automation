@@ -8,6 +8,15 @@ class loginPage1 {
         return '[class="auth0-lock-submit"]';
     }
 
+    get otpInput() {
+        return '[class="auth0-lock-input-block auth0-lock-input-vcode"] input';
+    }
+
+    get sumbitOtpButton() {
+        return '[name="submit"]';
+    }
+
+
     typeEmail(email, loginUrl) {
         return cy.origin (loginUrl, { args: { email, selector: this.emailInput } }, 
             ({ email, selector }) => {
@@ -16,8 +25,26 @@ class loginPage1 {
         );
     }
 
+
+    typeOtp(otp, loginUrl ) {
+       return cy.origin( loginUrl,{args : {otp, selector : this.otpInput } },
+       ({ otp,selector }) => {
+           cy.get(selector).click().type(otp);
+         }
+       )
+    };
+
+
     clickLoginSubmit(loginUrl) {
         return cy.origin(loginUrl, { args: { selector: this.submitButton } },
+            ({ selector }) => {
+                cy.get(selector).click();
+            }
+        );
+    }
+
+    clickOtpSubmit(loginUrl) {
+        return cy.origin( loginUrl,{ args: { selector: this.sumbitOtpButton }  },
             ({ selector }) => {
                 cy.get(selector).click();
             }

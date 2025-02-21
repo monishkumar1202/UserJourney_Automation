@@ -1,12 +1,13 @@
 
 {
-    "prodUrl" : "https://app.devrev.ai/testingdevrev",
-    "appUrl": "https://app.devrev.ai/test-demo1",
+    "appUrl" : "https://app.devrev.ai/testingdevrev",
+    "prodUrl": "https://app.devrev.ai/test-demo1",
+    
     
     "loginUrl": "https://passwordless.devrev.ai",
 
      "User01": {
-     "email":  "monishkumarsk12@gmail.com"
+     "email":  "devrevtesting@qualityteam571884.testinator.com"
   },
       "User02"  : {
       "email":  "qkmonishq13545@gmail.com"

@@ -1,25 +1,20 @@
+
 {
-    "Newissue": {
-    "titlename": "issue created by testing user journey",
-    "des": "Issue with clicking the button",
-    "parts": "testingUserjourney",
-    "addowner": "Adhithya Sankar C ",
-    "priority": "P3",
-    "tags": "Getting Started",
-    "reportedby": "monishkumarsk12",
-    "addsprint": "sprint27-29",
-    "stagecompleted": "Completed",
-    "stagewontfix": "Wont Fix",
-    "stageduplicate": "Duplicate",
-    "wontfixmessage": "This is not valid Bug",
-    "stageOpenBac": "Backlog",
-    "stageOpenPri": "Prioritized",
-    "stageDev": "In Development",
-    "partsname": "testingUserJourney",
-    "dashboardname": "DashboardIssues",
-    "dashboarddes": "Issue User Journery",
-    "sprinttitle": "Sprint 31-14"
+
+     "Newissue": {
+        "titlename": "issue created by testing user journey",
+        "des": "Issue with clicking the button",
+        "parts": "testingUserjourney",
+        "addowner": "Adhithya Sankar C",
+        "priority": "P3",
+        "tags": "Getting Started",
+        "reportedby": "monishkumarsk12"
+  },
+
+      "SelectOption": {
+       "selectIssue": "Issue",
+       "selectTicket": "Ticket",
+       "selectOpp": "Opportunity"
   }
+  
 }
-
-

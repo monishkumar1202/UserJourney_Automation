@@ -1,7 +1,7 @@
 export default class NewIOT {
 
      get newWorkButtonIOT() {
-        return cy.get('[data-drid="works--new-work-button"]', {timeout:40000})
+        return cy.get('[data-drid="works--new-work-button"]',)
      }
 
      get selectNewWorkIOT() {
@@ -81,7 +81,7 @@ export default class NewIOT {
      }
 
      get formatActionBar() {
-        return cy.get('data-drid="works--create-work-sidebar--shared-template-field-body--action-bar--toggle-formatting"')
+        return cy.get('[data-drid="works--create-work-sidebar--shared-template-field-body--action-bar--toggle-formatting"]')
      }
 
      get addEmoji() {

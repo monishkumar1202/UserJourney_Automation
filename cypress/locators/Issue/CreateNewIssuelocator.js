@@ -59,6 +59,10 @@ export default class WorkPage {
     get submitButton() {
       return cy.get('[data-drid="works--create-work-submit"]');
     }
+
+    get body() {
+      return cy.get('body').click(0, 0);
+    }
   }
   
   

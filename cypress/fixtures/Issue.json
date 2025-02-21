@@ -5,10 +5,11 @@
         "titlename": "issue created by testing user journey",
         "des": "Issue with clicking the button",
         "parts": "testingUserjourney",
-        "addowner": "Adhithya Sankar C",
+        "addowner": "c-adhithya-sankar",
         "priority": "P3",
         "tags": "Getting Started",
-        "reportedby": "monishkumarsk12"
+        "reportedby": "monishkumarsk12",
+        "sprint"  : ""
   },
 
       "SelectOption": {

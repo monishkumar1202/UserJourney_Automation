@@ -19,6 +19,7 @@
 
     "test": "echo \"Error: no test specified\" && exit 1",
     "test:cypress"     :  "npx cypress open",
+    "test:cypress:view":  "npx cypress open --config viewportHeight=980,viewportWidth=1580",
     "test:allure"      :  "cypress run --env allure=true",
     "test:allure:spec" :  "cypress run --env allure=true --headed --browser chrome --spec",
     "allure:clear"     :  "rmdir /s /q allure-results && rmdir /s /q allure-report || true",

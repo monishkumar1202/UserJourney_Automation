@@ -5,23 +5,30 @@ const newissuepage = new NewWorkIssue();
 class NewWorkIssuePage {
     
       selectAppliesToPart(part) {
-        newissuepage.appliesToPartDropdown.select(part);
+        newissuepage.appliesToPartDropdown.click();
+        newissuepage.appliesToPartOptions.contains(part).click();
       }
     
       selectOwnedBy(owner) {
-        newissuepage.ownedByDropdown.select(owner);
+        newissuepage.ownedByDropdown.click();
+        newissuepage.ownedByOptions.contains(owner).click();
       }
     
       selectPriority(priority) {
-        newissuepage.priorityDropdown.select(priority);
+        newissuepage.priorityDropdown.click();
+        newissuepage.priorityOptions.contains(priority).click();
       }
     
       selectTags(tags) {
-        newissuepage.tagsDropdown.select(tags);
+        newissuepage.tagsDropdown.click();
+        newissuepage.tagsOptions.contains(tags).click();
+        newissuepage.body.click(0, 0);
       }
     
       selectReportedBy(reporter) {
-        newissuepage.reportedByDropdown.select(reporter);
+        newissuepage.reportedByDropdown.click();
+        newissuepage.reportedByOptions.contains(reporter).click();
+        newissuepage.body.click(0, 0);
       }
     
       enterSprint(sprint) {

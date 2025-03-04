@@ -23,3 +23,13 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+
+Cypress.on('log:added', (log) => {
+    if (log.displayName === 'xhr' || log.displayName === 'fetch') {
+        return false; // Hides all API calls in Cypress Command Log
+    }
+});
+
+
+

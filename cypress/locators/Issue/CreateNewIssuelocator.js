@@ -61,7 +61,7 @@ export default class WorkPage {
     }
 
     get body() {
-      return cy.get('body').click(0, 0);
+      return cy.get('body');
     }
   }
   

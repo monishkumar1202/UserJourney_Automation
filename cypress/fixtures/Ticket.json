@@ -1,0 +1,66 @@
+{
+   "NewTicket": {
+      "titlename": "Ticket No : 01",
+      "des": "Ticket created with clicking the button",
+      "parts": "testingUserjourney",
+      "addowner": "c-adhithya-sankar",
+      "group": "Admins",
+      "severity": "High",
+      "tags": "Getting Started",
+      "date": "Tomorrow",
+      "typedata": "11012026",
+      "account": "Test",
+      "report": "userA",
+      "channel": "testing"
+   },
+   "DeletedTicket": {
+      "deletedmessage": "Deleted successfully",
+      "deleteticket": "Tck 04"
+   },
+   "AttributeFields": {
+      "fields": [
+         "Owner",
+         "Priority",
+         "Tags",
+         "Target Start Date",
+         "Target Close Date",
+         "Reported by",
+         "Sprint"
+      ],
+      "optionfields": [
+         "Tags",
+         "Target Start Date",
+         "Target Close Date",
+         "Reported by",
+         "Sprint",
+         "Estimated effort"
+      ]
+   },
+   "MultiTicketTitle": {
+      "titlename1": "ButtonCreation",
+      "titlename2": "PageCreation",
+      "titlename3": "SerachBarCreation",
+      "titlename4": "TitleCreation",
+      "titlename5": "DescriptionCreation"
+   },
+   "MultiTicket": {
+      "titlename": "Ticket No : 01",
+      "des": " Created Item issue",
+      "parts": "testingUserjourney",
+      "addowner": "c-adhithya-sankar",
+      "group": "Admins",
+      "severity": "High",
+      "tags": "Getting Started",
+      "date": "Tomorrow",
+      "account": "Test",
+      "report": "userA",
+      "channel": "testing"
+   },
+   "QuickFliters": {
+      "allfield": "All fields",
+      "emptyfield": "Empty fields",
+      "filledfield": "Filled fields",
+      "requirefield": "Required fields",
+      "summaryfield": "Summary fields"
+   }
+}

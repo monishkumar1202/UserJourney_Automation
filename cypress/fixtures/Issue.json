@@ -6,15 +6,15 @@
         "des": "Issue with clicking the button",
         "parts": "testingUserjourney",
         "addowner": "c-adhithya-sankar",
-        "priority": "P3",
         "tags": "Getting Started",
-        "reportedby": "monishkumarsk12",
-        "sprint"  : ""
+        "date": "Tomorrow",
+        "account": "Test"
+        
   },
 
       "SelectOption": {
        "selectIssue": "Issue",
-       "selectTicket": "Ticket",
+       "selectTicket": "Tickets",
        "selectOpp": "Opportunity"
   }
   

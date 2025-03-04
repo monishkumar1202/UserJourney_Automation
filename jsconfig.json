@@ -1,5 +1,9 @@
 {
-    "compilerOptions": {
-      "types": ["cypress", "./cypress/support/index.d.ts"]
-    }
+  "compilerOptions": {
+    "types": [
+      "cypress",
+      "./cypress/support/index.d.ts"
+    ],
+    "checkJs": false
+  }
 }

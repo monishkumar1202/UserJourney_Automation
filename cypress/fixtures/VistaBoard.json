@@ -1,0 +1,92 @@
+{
+    "VistaBoard": {
+        "Title": "Tickets"
+    },
+    "VistaTable": {
+        "Owner": "Devrevtesting"
+    },
+    "VistaFilters": {
+        "filters": [
+            "Ticket",
+            "Created date",
+            "Stage"
+        ],
+        "dropdowns": [
+            "Sort",
+            "Group",
+            "Customize",
+            "View type"
+        ]
+    },
+    "CreatedDateFilters": {
+        "day1": "Last 1 days",
+        "day7": "Last 7 days",
+        "day30": "Last 30 days",
+        "day90": "Last 90 days"
+    },
+    "StageFilter": {
+        "open": "Queued",
+        "closed": {
+            "accepted": "Accepted",
+            "cancelled": "Canceled",
+            "resolved": "Resolved"
+        },
+        "inprogress": {
+            "development": "Awaiting Development",
+            "workprogress": "Work in Progress",
+            "productassist": "Awaiting Product Assist",
+            "indevelopment": "In Development",
+            "customerresponse": "Awaiting Customer Response"
+        }
+    },
+    "DefaultMenuOption": {
+        "sort": "Sort",
+        "group": "Group",
+        "customize": "Customize",
+        "viewtype": "View type"
+    },
+    "AttributeOptions": {
+        "options": [
+            "Created date",
+            "Stage",
+            "Work type",
+            "Close date",
+            "Creation agent ID",
+            "Created by",
+            "Source Created Date",
+            "Source Modified Date",
+            "Links",
+            "Modified date",
+            "Owner",
+            "Reported by",
+            "Changes Need Review",
+            "Sync-in Status",
+            "Sync-in Date",
+            "Sync Name",
+            "Sync-out Status",
+            "Sync-out Date",
+            "Sync Origin System",
+            "Tags",
+            "Target Close Date",
+            "Part",
+            "Channels",
+            "Group",
+            "Immutable",
+            "Spam",
+            "Last External Message",
+            "Needs Response",
+            "Customer Workspace",
+            "Sentiment",
+            "Severity",
+            "SLA Name",
+            "Next SLA Target",
+            "Source channel",
+            "Subtype",
+            "CSAT Rating"
+        ]
+    },
+    "SearchItem": {
+        "vailditem": "Ticket no : 04",
+        "invailditem": "zzz"
+    }
+}

@@ -4,6 +4,3 @@ Cypress.on('uncaught:exception', (err, runnable) => {
     return false;
 });
 
-Cypress.on('test:before:run', () => {
-    cy.viewport(1209, 380);
-  });

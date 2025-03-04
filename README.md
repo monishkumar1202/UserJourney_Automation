@@ -142,4 +142,4 @@ Cypress-Framework/
 * `package.json`: Node.js project configuration file.
 * `README.md`: Project documentation file.
 
-
+// $env:TAG="filter"; npm run test:allure:spec

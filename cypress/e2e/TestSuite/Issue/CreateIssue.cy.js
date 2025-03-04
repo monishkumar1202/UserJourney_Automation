@@ -1,13 +1,12 @@
 import Loginpagedev from "../../../pages/Loginpagedev";
 import ExplorePage from "../../../pages/ExplorePage";
-import NewWorkPage from "../../../pages/Components/NewWorkIOTPage";
+import NewWorkPage from "../../../pages/Components/NewWorkpage";
 import IssueDetailsPage from "../../../pages/Issue/NewIssuePage";
 import readOtp from "../../../support/readOtp";
 
 
 
-
-
+// QASE - 5658
 describe ('Create the New Issue ', ()=> {
 
 
@@ -34,7 +33,7 @@ describe ('Create the New Issue ', ()=> {
                ExplorePage.clickExploreTab();
                ExplorePage.searchItem(data.SearchIssues);                    
            })  
- 
+             
             // validation the Issue Created Sucessfully
                     
              cy.fixture('Issue').then((data) => {                
@@ -50,8 +49,10 @@ describe ('Create the New Issue ', ()=> {
                  IssueDetailsPage.selectPriority(data.Newissue.priority);
                  IssueDetailsPage.selectTags(data.Newissue.tags);
                  IssueDetailsPage.selectReportedBy(data.Newissue.reportedby);
-          //     IssueDetailsPage.enterSprint(data.Newissue.sprint);
-                 IssueDetailsPage.clickSubmit();                 
+            //   IssueDetailsPage.enterSprint(data.Newissue.sprint);
+                 IssueDetailsPage.clickSubmit();    
+                 
+             //  Validate the New Work Issue Page 
 
          })
     

@@ -24,11 +24,10 @@
     "test:cypress:view": "npx cypress open --config viewportHeight=980,viewportWidth=1580",
     "test:allure": "cypress run --env allure=true",
     "test:allure:spec:tag": "cypress run --env allure=true,grep=%TAG% --headed --browser chrome --config viewportHeight=980,viewportWidth=1580 --spec",
-    "test:allure:spec": "mkdir allure-results && npx cypress run --env allure=true --headed --browser=chrome --config viewportHeight=980,viewportWidth=1580 --spec",
-    "test:with-report": "npm run allure:clear && npm run test:allure:spec -- --spec=%npm_config_spec% && npm run allure:report && npm run allure:open",
+    "test:allure:spec": "npx cypress run --env allure=true --headed --browser=chrome --config viewportHeight=980,viewportWidth=1580 --reporter mocha-allure-reporter --spec",
+    "test:with-report": "npm run test:allure:spec -- --spec=%npm_config_spec% && npm run allure:report && npm run allure:open",
     "allure:clear": "if exist allure-results rmdir /s /q allure-results & if exist allure-report rmdir /s /q allure-report",
-    "allure:report": "allure generate --clean allure-results",
-    "allure:open": "allure open allure-report",
+    "allure:report-open": "allure generate --clean allure-results && allure open allure-report",
     "cy:run:tag": "npx cypress run --env grep=",
     "cy:run:grptag": "npx cypress run --env grepTags="
   }

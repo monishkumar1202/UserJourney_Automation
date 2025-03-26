@@ -1,85 +1,68 @@
-[
-    {    
-       
-     "EngagementOpportunity" : {
-
-       "exitsopportunityname": "Demotest10",
-       "engagementTitile": "Test",
-       "engagementDescription": "sanitytest",
+{
+    "EngagementOpportunity": {
+        "exitsopportunityname": "Demotest10",
+        "engagementTitile": "Test",
+        "engagementDescription": "sanitytest",
         "engagementType": "Email",
         "engagementTags": "Getting Started",
         "engagementStartDate": "2021-09-01",
         "engagementEndDate": "2021-09-01",
         "engagementOwner": "monishkumarsk12",
-        "engagementUrl": "www.testdemo.com" 
-     }  
+        "engagementUrl": "www.testdemo.com"
     },
-    {  
-
-    "NewOpportunity" : {
-
-        "titlename"    : "Demotest09",
-        "title"        : "Opportunities",
-        "totalValue"   : "10000",
-        "arr"          : "5000",
-        "contact"      : "UserF",
-        "addaccount"   : "Test_demo5",
-        "tags"         : "Getting Started",
-        "des"          : "testing automation",
-        "addowner"     : "monishkumarsk12",
-        "url"          : "www.testdemo.com" , 
-        "exitsoppotunity" : "Demotest09" ,
-        "sendMessage"  :  "This is a test message for automation."
-        }
+    "NewOpportunity": {
+        "titlename": "Demotest11",
+        "title": "Opportunities",
+        "amount": "10000",
+        "arr": "5000",
+        "contact": "UserF",
+        "addaccount": "Test_demo5",
+        "tag": "Getting Started",
+        "des": "testing automation",
+        "ownedBy": "monishkumarsk12",
+        "url": "www.testdemo.com",
+        "exitsoppotunity": "Demotest09",
+        "sendMessage": "This is a test message for automation.",
+        "appliesToPart": "testingUserjourney"
     },
-    {
-        "DeleteOpportunity" : {
-          
-        "deleteopportunityname" : "Demotest09"
-
-       }
+    "DeleteOpportunity": {
+        "deleteopportunityname": "Demotest09"
     },
-    { 
-        "TicketOpportunity"  : {
-          
-        "selectpart"       : "testingUserjourney",
-        "tickettitle"      :  "tickets008",
-        "existOpportunity" : "usertest02",
-        "Groups"           : "Admins",
-        "tags"             :  "mk",
-        "accountcustomer"  : "Test_demo5",
-        "createNewticket"  :  "New Ticket",
-        "des"              :  "Smoke Test"
-       }
-
+    "TicketOpportunity": {
+        "selectpart": "testingUserjourney",
+        "tickettitle": "tickets008",
+        "existOpportunity": "usertest02",
+        "Groups": "Admins",
+        "tags": "mk",
+        "accountcustomer": "Test_demo5",
+        "createNewticket": "New Ticket",
+        "des": "Smoke Test"
     },
-    {
-        "DiscussionOpportunity"  :  {
-
-            "existOpportunity" : "usertest02"
-        }
+    "DiscussionOpportunity": {
+        "existOpportunity": "usertest02"
     },
-    {
-       "ValidOpportunity" : {
-            "existOpportunity" : "usertest02"
-         }
+    "ValidOpportunity": {
+        "existOpportunity": "usertest02"
     },
-    {
-        "CloneOpportunity" : {
-            
-            "clonetitle"       : "clone04",
-            "existOpportunity" : "usertest03",
-            "tags"             : "Getting Started"
+    "CloneOpportunity": {
+        "clonetitle": "clone04",
+        "existOpportunity": "usertest03",
+        "tags": "Getting Started"
+    },
+    "SearchOpportunity": {
+        "attributeFilter": [
+            "Account"
+        ],
+        "RemoveFilter": [
+            "Option1",
+            "Option2"
+        ],
+        "searchFilterItem": "\"dont delete automation search\"",
+        "fliterAccountTab": {
+            "account": [
+                "automation",
+                "Test_Demo11"
+            ]
         }
     }
-        
-
-
-    
-        
-        
-        
-    
-    
-
-    ]
+}

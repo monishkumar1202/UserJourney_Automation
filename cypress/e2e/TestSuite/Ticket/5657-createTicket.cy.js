@@ -1,9 +1,9 @@
-import Loginpagedev from "../../../pages/Loginpagedev";
-import ExplorePage from "../../../pages/ExplorePage";
+import Loginpagedev from "../../../pages/PreExection/Loginpagedev";
+import ExplorePage from "../../../pages/PreExection/ExplorePage";
 import VistaPage from "../../../pages/Components/VistaBoardpage";
-import TicketPage from "../../../pages/Tickets/NewWorKTickets";
-import DeletePage from "../../../pages/Tickets/DeletedTicketpage";
-import NewWorkPage from "../../../pages/Components/NewWorkpage";
+import TicketPage from "../../../pageclass/Tickets/NewWorKTickets";
+import DeletePage from "../../../pageclass/Tickets/DeletedTicketpage";
+import NewWorkPage from "../../../pages/Components/NewWorkIOTpage";
 import { getLatestOtp } from "../../../support/readOtp";
 
 
@@ -47,6 +47,7 @@ describe('Explore the Ticket Attributes', () => {
         ExplorePage.clickExploreTab();
         ExplorePage.searchItem(exploreData.SearchTicket);
         NewWorkPage.clickNewWorkButton();
+        NewWorkPage.clickTicketOption(ticketData.NewTicket.Ticket);
         NewWorkPage.typeTitle(ticketData.NewTicket.titlename);
         NewWorkPage.typeDescription(ticketData.NewTicket.des);
 
@@ -91,7 +92,7 @@ describe('Explore the Ticket Attributes', () => {
         NewWorkPage.typeDescription(ticketData.NewTicket.des);
         NewWorkPage.selectAppliesToPart(ticketData.NewTicket.parts);
 
-        //    Create Multiples Tickets    
+        //     Create Multiples Tickets    
         // NewWorkPage.CreateMultipleButton();
         // NewWorkPage.clickSubmitButton();
         // NewWorkPage.fillTitle(ticketData.MultiTicketTitle.titlename1);
@@ -100,7 +101,7 @@ describe('Explore the Ticket Attributes', () => {
         // NewWorkPage.clickSubmitButton();
         // NewWorkPage.clickCloseButton();
 
-        // // Validate the Creating Ticket display vista Board
+        //     Validate the Creating Ticket display vista Board
         // VistaPage.verifyTicketsCreated(ticketData.MultiTicketTitle.titlename1);
         // VistaPage.verifyTicketsCreated(ticketData.MultiTicketTitle.titlename2);
     })

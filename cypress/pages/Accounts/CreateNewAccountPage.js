@@ -1,64 +1,71 @@
-import CreateAccount from  "../../locators/Accounts/CreateNewAccountlocator";
-
+import CreateAccount from "../../locators/components/CreateNewAccountlocators";
 
 const createAccount = new CreateAccount();
 
 class CreateAccountPages {
 
-    clickCreateAccountButton() {
-        createAccount.createAccountButton.click();
-    }
 
     fillDisplayName(name) {
-        createAccount.displayNameField.type(name);
+        cy.log(`Filling Display Name: ${name}`);
+        createAccount.displayNameField.should('be.visible').type(name);
     }
 
     fillDescription(description) {
-        createAccount.descriptionField.type(description);
+        cy.log(`Filling Description: ${description}`);
+        createAccount.descriptionField.should('be.visible').type(description);
     }
 
     fillWebsites(websites) {
-        createAccount.websitesField.type(websites);
+        cy.log(`Filling Websites: ${websites}`);
+        createAccount.websitesField.should('be.visible').type(websites);
     }
 
     selectTag(tag) {
-        createAccount.tagsField.click();
+        cy.log(`Selecting Tag: ${tag}`);
+        createAccount.tagsField.should('be.visible').click();
         createAccount.selectDropdownOptions.contains(tag).click();
+        createAccount.body.click();
     }
 
     clickCreateSubmitButton() {
-        createAccount.createSubmitButton.click();
+        cy.log('Clicking Create Submit Button');
+        createAccount.createSubmitButton.should('be.visible').click();
     }
 
     verifyAccountTitle(title) {
+        cy.log(`Verifying Account Title: ${title}`);
         createAccount.accountTitle.should('contain', title);
     }
 
     clickDiscussionsTab() {
-        createAccount.discussionsTab.click();
+        cy.log('Clicking Discussions Tab');
+        createAccount.discussionsTab.should('be.visible').click();
     }
 
     fillMessageInput(message) {
-        createAccount.messageInput.type(message);
+        cy.log(`Typing Message: ${message}`);
+        createAccount.messageInput.should('be.visible').type(message);
     }
 
     clickSubmitMessageButton() {
-        createAccount.submitMessageButton.click();
+        cy.log('Clicking Submit Message Button');
+        createAccount.submitMessageButton.should('be.visible').click();
     }
 
     verifyCommentsListItem() {
-        createAccount.commentsListItem.should('be.visible')
+        cy.log('Verifying Comments List Item');
+        createAccount.commentsListItem.should('be.visible');
     }
 
     clickCloseButton() {
-        createAccount.closeButton.click();
+        cy.log('Clicking Close Button');
+        createAccount.closeButton.should('be.visible').click();
     }
 
-    verifyTreeGrid() {
-        createAccount.treeGrid.should('be.visible');
-    }
+
+
+
 }
 
-
-
-module.exports = new CreateAccountPages();
+const createAccount = new CreateAccount();
+export default new CreateAccountPages;

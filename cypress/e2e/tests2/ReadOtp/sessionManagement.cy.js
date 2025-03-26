@@ -1,4 +1,4 @@
-import Loginpagedev from "../../../pages/Loginpagedev";
+import Loginpagedev from "../../../pages/PreExection/Loginpagedev";
 import { getLatestOtp } from "../../../support/readOtp";
 
 Cypress.Commands.add('login', () => {

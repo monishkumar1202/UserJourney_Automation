@@ -1,4 +1,4 @@
-import cloneOpportunity from "../../../pages/Opportunity/CloneOpportunityPage";
+import cloneOpportunity from "../../../pageclass/Opportunity/CloneOpportunityPage";
 
 describe('Clone Opportunity Test Suite', () => {
 

@@ -1,0 +1,155 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1742279727938' stop='1742279765673'>
+    <name>Delete the Account item</name>
+    <title>Delete the Account item</title>
+    <test-cases>
+        <test-case start='1742279727939' status='broken' stop='1742279765668'>
+            <name>should be delect account successfully</name>
+            <title>should be delect account successfully</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>`cy.request()` failed on:
+                
+                https://mailinator.com/api/v2/domains/private/inboxes/devrevtesting?limit=1&amp;sort=descending&amp;token=4df54826df654f05ad89b057ef8573db
+                
+                The response we received from your web server was:
+                
+                  > 401: Unauthorized
+                
+                This was considered a failure because the status code was not `2xx` or `3xx`.
+                
+                If you do not want status codes to cause failures pass the option: `failOnStatusCode: false`
+                
+                -----------------------------------------------------------
+                
+                The request we sent was:
+                
+                Method: GET
+                URL: https://mailinator.com/api/v2/domains/private/inboxes/devrevtesting?limit=1&amp;sort=descending&amp;token=4df54826df654f05ad89b057ef8573db
+                Headers: {
+                  "Connection": "keep-alive",
+                  "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36",
+                  "accept": "*/*",
+                  "accept-encoding": "gzip, deflate"
+                }
+                
+                -----------------------------------------------------------
+                
+                The response we got was:
+                
+                Status: 401 - Unauthorized
+                Headers: {
+                  "date": "Tue, 18 Mar 2025 06:36:05 GMT",
+                  "content-type": "application/json",
+                  "content-length": "86",
+                  "connection": "keep-alive",
+                  "access-control-allow-origin": "*",
+                  "expires": "Thu, 01 Jan 1970 00:00:00 GMT",
+                  "set-cookie": [
+                    "JSESSIONID=node01027rmoo0g0llqtlkztdvfeqt1992374.node0;Path=/;Secure;HttpOnly",
+                    "SERVERID=s2; path=/; HttpOnly"
+                  ],
+                  "cf-cache-status": "DYNAMIC",
+                  "strict-transport-security": "max-age=15552000; includeSubDomains",
+                  "expect-ct": "max-age=86400, enforce",
+                  "referrer-policy": "same-origin",
+                  "x-content-type-options": "nosniff",
+                  "x-frame-options": "SAMEORIGIN",
+                  "x-xss-protection": "1; mode=block",
+                  "server": "cloudflare",
+                  "cf-ray": "9222b6b06fa67941-AMD"
+                }
+                Body: {
+                  "error": "Team Disabled - contact support: mahaboob.peer@qualitykiosk.com:trial[DIS]"
+                }
+                
+                
+                This error occurred while creating the session. Because the session setup failed, we failed the test.
+                
+                https://on.cypress.io/request
+                
+                Because this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `Delete the Account item`</message>
+                <stack-trace>CypressError: `cy.request()` failed on:
+                
+                https://mailinator.com/api/v2/domains/private/inboxes/devrevtesting?limit=1&amp;sort=descending&amp;token=4df54826df654f05ad89b057ef8573db
+                
+                The response we received from your web server was:
+                
+                  > 401: Unauthorized
+                
+                This was considered a failure because the status code was not `2xx` or `3xx`.
+                
+                If you do not want status codes to cause failures pass the option: `failOnStatusCode: false`
+                
+                -----------------------------------------------------------
+                
+                The request we sent was:
+                
+                Method: GET
+                URL: https://mailinator.com/api/v2/domains/private/inboxes/devrevtesting?limit=1&amp;sort=descending&amp;token=4df54826df654f05ad89b057ef8573db
+                Headers: {
+                  "Connection": "keep-alive",
+                  "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36",
+                  "accept": "*/*",
+                  "accept-encoding": "gzip, deflate"
+                }
+                
+                -----------------------------------------------------------
+                
+                The response we got was:
+                
+                Status: 401 - Unauthorized
+                Headers: {
+                  "date": "Tue, 18 Mar 2025 06:36:05 GMT",
+                  "content-type": "application/json",
+                  "content-length": "86",
+                  "connection": "keep-alive",
+                  "access-control-allow-origin": "*",
+                  "expires": "Thu, 01 Jan 1970 00:00:00 GMT",
+                  "set-cookie": [
+                    "JSESSIONID=node01027rmoo0g0llqtlkztdvfeqt1992374.node0;Path=/;Secure;HttpOnly",
+                    "SERVERID=s2; path=/; HttpOnly"
+                  ],
+                  "cf-cache-status": "DYNAMIC",
+                  "strict-transport-security": "max-age=15552000; includeSubDomains",
+                  "expect-ct": "max-age=86400, enforce",
+                  "referrer-policy": "same-origin",
+                  "x-content-type-options": "nosniff",
+                  "x-frame-options": "SAMEORIGIN",
+                  "x-xss-protection": "1; mode=block",
+                  "server": "cloudflare",
+                  "cf-ray": "9222b6b06fa67941-AMD"
+                }
+                Body: {
+                  "error": "Team Disabled - contact support: mahaboob.peer@qualitykiosk.com:trial[DIS]"
+                }
+                
+                
+                This error occurred while creating the session. Because the session setup failed, we failed the test.
+                
+                https://on.cypress.io/request
+                
+                Because this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `Delete the Account item`
+                    at &lt;unknown> (https://app.devrev.ai/__cypress/runner/cypress_runner.js:133611:72)
+                    at tryCatcher (https://app.devrev.ai/__cypress/runner/cypress_runner.js:1777:23)
+                    at Promise._settlePromiseFromHandler (https://app.devrev.ai/__cypress/runner/cypress_runner.js:1489:31)
+                    at Promise._settlePromise (https://app.devrev.ai/__cypress/runner/cypress_runner.js:1546:18)
+                    at Promise._settlePromise0 (https://app.devrev.ai/__cypress/runner/cypress_runner.js:1591:10)
+                    at Promise._settlePromises (https://app.devrev.ai/__cypress/runner/cypress_runner.js:1671:18)
+                    at _drainQueueStep (https://app.devrev.ai/__cypress/runner/cypress_runner.js:2377:12)
+                    at _drainQueue (https://app.devrev.ai/__cypress/runner/cypress_runner.js:2370:9)
+                    at Async._drainQueues (https://app.devrev.ai/__cypress/runner/cypress_runner.js:2386:5)
+                    at Async.drainQueues (https://app.devrev.ai/__cypress/runner/cypress_runner.js:2256:14)
+                From Your Spec Code:
+                    at Object.proxyGetter [as get] (https://app.devrev.ai/__cypress/runner/cypress_runner.js:77938:22)
+                    at exists (https://app.devrev.ai/__cypress/runner/cypress_runner.js:143690:26)
+                    at elExists (https://app.devrev.ai/__cypress/runner/cypress_runner.js:143705:10)
+                    at ensureExistence (https://app.devrev.ai/__cypress/runner/cypress_runner.js:143886:22)
+                    at onFailFn (https://app.devrev.ai/__cypress/runner/cypress_runner.js:143915:53)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

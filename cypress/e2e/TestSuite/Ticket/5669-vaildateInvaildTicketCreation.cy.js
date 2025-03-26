@@ -1,8 +1,26 @@
 import NewWorkPage from "../../../pages/NewWorkPage";
-import Loginpagedev from "../../../pages/Loginpagedev";
+import Loginpagedev from "../../../pages/PreExection/Loginpagedev";
 import VistaPage from "../../../pages/Components/VistaBoardpage";
 import readOtp from "../../../support/readOtp";
-import ExplorePage from "../../../pages/ExplorePage";
+import ExplorePage from "../../../pages/PreExection/ExplorePage";
+
+
+Cypress.Commands.add('login', () => {
+    cy.session('login', () => {
+        cy.visit('https://app.devrev.ai/test-demo1');
+        cy.fixture('loginData').then((loginData) => {
+            Loginpagedev.typeEmail(loginData.User01.email);
+            Loginpagedev.clickLoginSubmit();
+            cy.wait(2000);
+            getLatestOtp().then((otp) => {
+                Loginpagedev.typeOtp(otp, loginData.loginUrl);
+                Loginpagedev.clickOtpSubmit(loginData.loginUrl);
+            });
+            ExplorePage.exploreTab();
+        });
+    });
+});
+
 
 describe('Explore the Ticket Attributes', () => {
 
@@ -26,22 +44,6 @@ describe('Explore the Ticket Attributes', () => {
         });
     });
 
-
-    it('Login Dever Account Sucessfully', () => {
-
-        // Visit login page and perform login steps
-        cy.visit(loginData.prodUrl);
-        Loginpagedev.typeEmail(loginData.User01.email);
-        Loginpagedev.clickLoginSubmit();
-        cy.wait(3000);
-
-        // Handle OTP verification
-        readOtp.getLatestOtp().then((otp) => {
-            Loginpagedev.typeOtp(otp);
-            Loginpagedev.clickOtpSubmit();
-
-        });
-    });
 
     it('Verify ticket creation from conversation with special characters', () => {
 

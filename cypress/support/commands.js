@@ -31,5 +31,10 @@ Cypress.on('log:added', (log) => {
     }
 });
 
+// Cypress.on('fail', (err) => {
+//     cy.log(`Test failed: ${err.message}`);
+// });
+
+
 
 

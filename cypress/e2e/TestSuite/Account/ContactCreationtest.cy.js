@@ -1,35 +1,35 @@
-import ContactPage from "../../../pages/Accounts/ContactCreationPage";
-import Loginpagedev from "../../../pages/Loginpagedev";
-import ExplorePage from "../../../pages/ExplorePage";
+import ContactPage from "../../../pageclass/Accounts/ContactCreationPage";
+import Loginpagedev from "../../../pages/PreExection/Loginpagedev";
+import ExplorePage from "../../../pages/PreExection/ExplorePage";
 
 
 
 describe('Contact Creation Test', () => {
 
     beforeEach(() => {
-    
+
         cy.fixture('loginData').then((data) => {
-           cy.visit(data.appUrl)
+            cy.visit(data.appUrl)
         })
 
     })
-    
-        it('Login Dever Account and Navigate to Opportunities Page', () => {
-               
-             cy.fixture('loginData').then((data) => {
+
+    it('Login Dever Account and Navigate to Opportunities Page', () => {
+
+        cy.fixture('loginData').then((data) => {
             //    Loginpagedev.typeEmail(data.validUser.email, data.loginUrl);
             //    Loginpagedev.clickLoginSubmit(data.loginUrl);       
             //    cy.wait(50000) 
-                }) 
-             cy.fixture('ExplorePage').then((data) => {
-                    ExplorePage.clickExploreTab();
-                    ExplorePage.searchItem(data.SearchOpp);                    
-                })  
         })
+        cy.fixture('ExplorePage').then((data) => {
+            ExplorePage.clickExploreTab();
+            ExplorePage.searchItem(data.SearchOpp);
+        })
+    })
 
-         it('should create a new contact successfully', () => {
-                     
-          cy.fixture('Account').then((data) => {
+    it('should create a new contact successfully', () => {
+
+        cy.fixture('Account').then((data) => {
             // Create the Contact via accounts 
             ContactPage.ContactCreation();
             ContactPage.fillDisplayName(data.contactAccount.titlename);
@@ -46,7 +46,7 @@ describe('Contact Creation Test', () => {
             ContactPage.clickSeeAllDetailsButton();
             ContactPage.verifyTreegrid(data.contactAccount.titlename);
 
-        })  
+        })
     });
 
 });

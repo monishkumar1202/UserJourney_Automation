@@ -5,13 +5,14 @@ module.exports = defineConfig({
 
   defaultCommandTimeout: 20000,
   e2e: {
+
     setupNodeEvents(on, config) {
       allureWriter(on, config);
       return config;
     },
     env: {
       grep: null, // Default: Run all tests
-      allure: true,
+      //  allure: true 
     },
     testIsolation: false,
     chromeWebSecurity: false,

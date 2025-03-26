@@ -1,42 +1,38 @@
-describe('Creating the Ticket via Contact',()=> {
+describe('Creating the Ticket via Contact', () => {
 
     const contactdetails = {
-<<<<<<< HEAD
-        titlename : 'UserY',
-=======
-        titlename : 'UserXY',
->>>>>>> 476bcf5 (My First Version on Datadriven Framework)
-        members : 'monishkumarsk12',
-        email  : 'testautomation@gmail.com',
-        phoneno : '9998887750',
-        tags : 'mk'
+        titlename: 'UserXY',
+        members: 'monishkumarsk12',
+        email: 'testautomation@gmail.com',
+        phoneno: '9998887750',
+        tags: 'mk'
     }
-  
-    it('New Ticket create via Contact details', ()=>  {
 
-    // Login the Devrev account
-       cy.visit('https://app.devrev.ai/test-demo1')
-       cy.get('input[inputmode="email"]').type('monishkumarsk12@gmail.com')
-       cy.get('[class="auth0-lock-submit"]').should('be.visible').click()
-       cy.wait(50000)
+    it('New Ticket create via Contact details', () => {
+
+        // Login the Devrev account
+        cy.visit('https://app.devrev.ai/test-demo1')
+        cy.get('input[inputmode="email"]').type('monishkumarsk12@gmail.com')
+        cy.get('[class="auth0-lock-submit"]').should('be.visible').click()
+        cy.wait(50000)
 
 
 
-    // Navigate to the Contacts
+        // Navigate to the Contacts
 
-        cy.get('[title="Explore"]',{timeout : 20000}).click()
-        cy.get('[data-drid="explore-page--search-bar-small-screen"]',{timeout : 20000})
-        .should('be.visible').type('Contacts')
+        cy.get('[title="Explore"]', { timeout: 20000 }).click()
+        cy.get('[data-drid="explore-page--search-bar-small-screen"]', { timeout: 20000 })
+            .should('be.visible').type('Contacts')
         cy.get('[col-id="View"]').contains('Contacts').click()
 
-    // Create a new contact
-    
-    //  cy.get('[title="Contacts"]',{timeout : 20000}).should('be.visible').click()
+        // Create a new contact
+
+        //  cy.get('[title="Contacts"]',{timeout : 20000}).should('be.visible').click()
         cy.get('[data-drid="revu--create-sidebar--new-rev-user"]').click()
         cy.get('input[name="displayName"]').type(contactdetails.titlename)
         cy.get('[data-drid="revu--create-sidebar--description--editor"]').type('testing initiate')
         cy.get('[data-drid="revu--create-sidebar--shared-template-field-email--content"]').type(contactdetails.email)
-        
+
         cy.get('[data-drid="revu--create-sidebar--shared-template-field-phone_numbers--placeholder"]').click()
         cy.get('[data-drid="revu--create-sidebar--shared-template-field-phone_numbers--country-code-dropdown-trigger"]').click()
         cy.get('.select-dropdown__search-input').type('India').type('{enter}')
@@ -51,13 +47,13 @@ describe('Creating the Ticket via Contact',()=> {
         cy.get('[data-drid="revu--create-submit"]').contains('Create').click()
 
 
-    // Verify that the contact was created successfully
-           
+        // Verify that the contact was created successfully
+
         cy.get('[data-drid="revu-info-header--title"]').contains(contactdetails.titlename)
         cy.get('[data-drid="revu--details-sidebar--close-button"]').should('be.visible').click()
         cy.get('[role="rowgroup"]').contains(contactdetails.titlename)
-         
-     
+
+
 
     })
 
@@ -70,4 +66,3 @@ describe('Creating the Ticket via Contact',()=> {
 
 
 
-                          

@@ -57,4 +57,4 @@ export default class CreateAccount {
     }
 }
 
-const createaccount = new CreateAccount();
+// const createaccount = new CreateAccount();

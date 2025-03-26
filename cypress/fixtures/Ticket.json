@@ -2,12 +2,13 @@
    "NewTicket": {
       "titlename": "Ticket No : 01",
       "des": "Ticket created with clicking the button",
-      "parts": "testingUserjourney",
+      "AppliesToPart": "testingUserjourney",
       "addowner": "c-adhithya-sankar",
       "group": "Admins",
       "severity": "High",
       "tags": "Getting Started",
       "date": "Tomorrow",
+      "RecordId": "67",
       "typedata": "11012026",
       "account": "Test",
       "report": "userA",
@@ -62,5 +63,10 @@
       "filledfield": "Filled fields",
       "requirefield": "Required fields",
       "summaryfield": "Summary fields"
+   },
+   "NewWorkOption": {
+      "Ticket": "Ticket",
+      "Issue": "Issue",
+      "Opportunity": "Opportunity"
    }
 }

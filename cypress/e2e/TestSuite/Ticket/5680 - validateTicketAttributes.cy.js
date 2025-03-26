@@ -1,11 +1,27 @@
-import NewWorkTicket from "../../../pages/Tickets/NewWorKTickets";
+import NewWorkTicket from "../../../pageclass/Tickets/NewWorKTickets";
 import readOtp from "../../../support/readOtp";
-import NewWorkPage from "../../../pages/Components/NewWorkpage";
+import NewWorkPage from "../../../pages/Components/NewWorkIOTpage";
 import Loginpagedev from "../../../pages/Login/Loginpagedev";
-import ExplorePage from "../../../pages/ExplorePage";
-import NewWorKTickets from "../../../pages/Tickets/NewWorKTickets";
+import ExplorePage from "../../../pages/PreExection/ExplorePage";
+import NewWorKTickets from "../../../pageclass/Tickets/NewWorKTickets";
 
 
+
+Cypress.Commands.add('login', () => {
+    cy.session('login', () => {
+        cy.visit('https://app.devrev.ai/test-demo1');
+        cy.fixture('loginData').then((loginData) => {
+            Loginpagedev.typeEmail(loginData.User01.email);
+            Loginpagedev.clickLoginSubmit();
+            cy.wait(2000);
+            getLatestOtp().then((otp) => {
+                Loginpagedev.typeOtp(otp, loginData.loginUrl);
+                Loginpagedev.clickOtpSubmit(loginData.loginUrl);
+            });
+            ExplorePage.exploreTab();
+        });
+    });
+});
 
 describe('Create the New Issue ', () => {
 

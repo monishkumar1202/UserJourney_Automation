@@ -1,0 +1,13 @@
+{
+    "contactdetails": {
+        "displayname": "UserXY",
+        "description": "This is a test automation user",
+        "members": "monishkumarsk12",
+        "email": "testautomation@gmail.com",
+        "phoneno": "9998887750",
+        "tags": "mk"
+    },
+    "deletecontact": {
+        "displayname": "UserXY"
+    }
+}

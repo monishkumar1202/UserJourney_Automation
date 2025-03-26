@@ -1,7 +1,7 @@
-import Loginpagedev from "../../pages/Loginpagedev";
+import Loginpagedev from "../../pages/PreExection/Loginpagedev";
 
 describe('Login Test', () => {
-    
+
     beforeEach(() => {
         cy.fixture('loginData').then((data) => {
             cy.visit(data.appUrl);
@@ -9,9 +9,9 @@ describe('Login Test', () => {
     });
 
     it('Login with valid credentials', () => {
-         cy.fixture('loginData').then((data) => {  
-             Loginpagedev.typeEmail(data.validUser.email, data.loginUrl);
-             Loginpagedev.clickLoginSubmit(data.loginUrl);
+        cy.fixture('loginData').then((data) => {
+            Loginpagedev.typeEmail(data.validUser.email, data.loginUrl);
+            Loginpagedev.clickLoginSubmit(data.loginUrl);
         });
     });
 });

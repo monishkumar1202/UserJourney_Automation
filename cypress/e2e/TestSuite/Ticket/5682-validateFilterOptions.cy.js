@@ -1,7 +1,7 @@
-import Loginpagedev from "../../../pages/Loginpagedev";
+import Loginpagedev from "../../../pages/PreExection/Loginpagedev";
 import VistaPage from "../../../pages/Components/VistaBoardpage";
 import readOtp from "../../../support/readOtp";
-import ExplorePage from "../../../pages/ExplorePage";
+import ExplorePage from "../../../pages/PreExection/ExplorePage";
 
 
 Cypress.Commands.add('login', () => {
